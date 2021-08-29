@@ -1,0 +1,15 @@
+{
+    "language": "ja",
+    "title": "IDEA-TRPG 世界観",
+    "description": "これはIDEA-TRPG世界観説明のページです。",
+    "author": "Nomikarl",
+    "plugins": [
+      "include-html",
+      "honkit-plugin-google-analytics"
+    ],
+    "pluginsConfig": {
+        "analytics": {
+            "uid": "UA-204980327-2"
+        }
+    }
+}

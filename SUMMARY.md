@@ -1,0 +1,76 @@
+# Summary
+
+## 第 I 部 IDEA-TRPG とは
+* [Introduction](README.md)
+* [IDEA-TRPG の世界](about/README.md)
+* [IDEA-TRPG をはじめるために](about/README.md#2-生命)
+  * [参加者](principle/magical_technology.md#41-魔力)
+  * [場所](principle/magical_technology.md#41-魔力)
+  * [道具](principle/magical_technology.md#41-魔力)
+  * [冒険者登録証](principle/magical_technology.md#41-魔力)
+  * [心がけ](principle/magical_technology.md#41-魔力)
+
+## 第 II 部 ゲームルール
+* [Introduction](README.md)
+* [判定](principle/README.md)
+  * [判定が要求される時](principle/magical_technology.md#41-魔力)
+  * [通常判定](principle/magical_technology.md#41-魔力)
+  * [比較判定](principle/magical_technology.md#41-魔力)
+  * [複数判定](principle/magical_technology.md#41-魔力)
+  * [補正](principle/magical_technology.md#41-魔力)
+  * [運命力の消費](principle/magical_technology.md#41-魔力)
+* [戦闘](principle/magical_technology.md)
+  * [行動順](principle/magical_technology.md#41-魔力)
+  * [先制攻撃](principle/magical_technology.md#42-魔法と魔術の違い)
+  * [攻撃と防御](principle/magical_technology2.md)
+  * [戦闘の終了](principle/magical_technology.md#41-魔力)
+  * [逃走](principle/magical_technology.md#42-魔法と魔術の違い)
+  * [遠距離からの狙撃](principle/magical_technology2.md)
+  * [とどめを刺す](principle/magical_technology2.md)
+* [負傷と治療](principle/magical_technology3.md)
+  * [負傷](principle/magical_technology3.md#51-物理法則)
+  * [治療](principle/magical_technology3.md#52-学術分野)
+* [精神的ショック](principle/magical_technology4.md)
+* [魔術と魔法力](principle/magical_technology4.md#61-聡人とは)
+* [冒険の終わりと成長](principle/magical_technology4.md#62-人間族)
+
+## 第 III 部 キャラメイク
+* [Introduction](README.md)
+* [種族](civilization/README.md)
+* [ステータス](civilization/README.md#71-中央大陸)
+  * [肉体](civilization/README.md#72-南方大陸)
+  * [魔法](civilization/README.md#73-東方大陸)
+  * [知性](civilization/README.md#74-新大陸)
+  * [器用](civilization/README.md#72-南方大陸)
+  * [魅力](civilization/README.md#73-東方大陸)
+  * [運気](civilization/README.md#74-新大陸)
+* [パラメータ](civilization/nation.md)
+  * [体力](civilization/nation.md#81-帝国)
+  * [魔法力](civilization/nation.md#82-王国)
+  * [精神力](civilization/nation.md#83-共和国)
+  * [運命力](civilization/nation.md#84-連邦)
+* [職業](civilization/nation.md#81-帝国)
+* [技能](civilization/nation.md#82-王国)
+* [個性](civilization/nation.md#83-共和国)
+* [設定](civilization/nation.md#84-連邦)
+
+## 第 IV 部 ゲームマスターに向けて
+* [Introduction](README.md)
+* [準備](dominion/README.md)
+* [シナリオ](dominion/dominion2.md)
+* [キャラメイク](dominion/dominion2.md#11-技術水準)
+* [ステータスの活用](dominion/dominion2.md#12-文化)
+* [判定](dominion/dominion3.md)
+* [脱落](dominion/dominion3.md#14-教育)
+* [エンディング](dominion/dominion3.md#15-軍事)
+
+## 第 V 部 よりよいプレイのために
+* [表現](adventurer/README.md)
+* [魔術](adventurer/README.md#18-冒険者)
+* [出目と行動](adventurer/README.md)
+* [ロールプレイ](adventurer/README.md#18-冒険者)
+
+## 第 VI 部 おまけ
+* [技能の説明](adventurer/README.md)
+* [なにかと便利なランダム表](adventurer/README.md#18-冒険者)
+
