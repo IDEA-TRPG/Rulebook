@@ -1,0 +1,30 @@
+{
+  "name": "rulebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx honkit build ./ ./docs",
+    "start": "npx honkit serve ./ ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDEA-TRPG/Rulebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDEA-TRPG/Rulebook/issues"
+  },
+  "homepage": "https://github.com/IDEA-TRPG/Rulebook#readme",
+  "devDependencies": {
+    "honkit": "^3.6.20"
+  },
+  "dependencies": {
+    "gitbook-plugin-ga": "^2.0.0",
+    "gitbook-plugin-include-html": "^0.2.0",
+    "honkit-plugin-google-analytics": "^1.0.0"
+  }
+}
