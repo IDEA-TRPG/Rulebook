@@ -2,13 +2,13 @@
 
 ## 第 I 部 IDEA-TRPG とは
 * [Introduction](README.md)
-* [IDEA-TRPG の世界](about/README.md)
-* [IDEA-TRPG をはじめるために](about/README.md#2-生命)
-  * [参加者](principle/magical_technology.md#41-魔力)
-  * [場所](principle/magical_technology.md#41-魔力)
-  * [道具](principle/magical_technology.md#41-魔力)
-  * [冒険者登録証](principle/magical_technology.md#41-魔力)
-  * [心がけ](principle/magical_technology.md#41-魔力)
+* [IDEA-TRPGの世界](about/README.md)
+* [IDEA-TRPGをはじめるために](about/get_start.md)
+  * [参加者](about/get_start.md)
+  * [場所](about/get_start.md)
+  * [道具](about/get_start.md)
+  * [冒険者登録証](about/get_start.md)
+  * [心がけ](about/get_start.md)
 
 ## 第 II 部 ゲームルール
 * [Introduction](README.md)
