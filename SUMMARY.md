@@ -4,11 +4,11 @@
 * [Introduction](README.md)
 * [IDEA-TRPGの世界](about/README.md)
 * [IDEA-TRPGをはじめるために](about/get_start.md)
-  * [参加者](about/get_start.md)
-  * [場所](about/get_start.md)
-  * [道具](about/get_start.md)
-  * [冒険者登録証](about/get_start.md)
-  * [心がけ](about/get_start.md)
+  * [参加者](about/get_start.md#2.1)
+  * [場所](about/get_start.md#2.2)
+  * [道具](about/get_start.md#2.3)
+  * [冒険者登録証](about/get_start.md#2.4)
+  * [心がけ](about/get_start.md#2.5)
 
 ## 第 II 部 ゲームルール
 * [Introduction](README.md)
