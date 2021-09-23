@@ -46,7 +46,7 @@ jobs:
         yarn build
     - name: cname
       run: |
-        echo "docs.idea-trpg.com" >  docs/CNAME
+        echo "principle.idea-trpg.com" >  docs/CNAME
     - name: Push to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
