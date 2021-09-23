@@ -5,3 +5,4 @@
 * [第四章](CHAPTER3.md)
 * [第五章](CHAPTER4.md)
 * [第六章](CHAPTER5.md)
+* [トップへ戻る](https://idea-trpg.com)
