@@ -15,13 +15,42 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '12.x'
+
+    - name: split
+      run: |
+        python split.py worldview.txt
+        dir
+    - name: Commit files
+      run: |
+          raise(){
+             echo "raise exception"
+             exit 1
+          }
+          # try
+          (
+            git config user.name "RTa-technology"
+            git config user.email "scpfoundationidcardmaker@gmail.com"
+            git add .
+            git commit -m "自動更新"
+            git pull
+            git push origin master
+          ) || {
+          # catch
+            echo "Finalization"
+            exit 1
+          }
     - name: Install dependencies
       run: yarn --frozen-lockfile
     - name: Build Honkit
-      run: yarn build
+      run: |
+        yarn build
+    - name: cname
+      run: |
+        echo "docs.idea-trpg.com" >  docs/CNAME
     - name: Push to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: docs/
+
