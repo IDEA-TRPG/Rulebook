@@ -18,7 +18,7 @@ jobs:
 
     - name: split
       run: |
-        python split.py worldview.txt
+        python split.py rules.txt
         dir
     - name: Commit files
       run: |
@@ -53,4 +53,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: docs/
-

@@ -1,6 +1,0 @@
-feature: feature/*
-develop:
-  - develop/*
-  - develop
-bug: hotfix/*
-chore: chore/*
