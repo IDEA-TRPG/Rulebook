@@ -1,7 +1,7 @@
 {
     "language": "ja",
-    "title": "IDEA-TRPG 世界観",
-    "description": "これはIDEA-TRPG世界観説明のページです。",
+    "title": "IDEA-TRPG ルールブック",
+    "description": "これはIDEA-TRPGルールブックのページです。",
     "author": "Nomikarl",
     "plugins": [
       "include-html",
