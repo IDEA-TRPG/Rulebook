@@ -33,7 +33,7 @@ jobs:
             git add .
             git commit -m "自動更新"
             git pull
-            git push origin master
+            git push master
           ) || {
           # catch
             echo "Finalization"
