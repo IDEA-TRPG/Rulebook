@@ -7,7 +7,7 @@ on:
 
 jobs:
   gh-pages-deploy:
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -22,23 +22,12 @@ jobs:
         dir
     - name: Commit files
       run: |
-          raise(){
-             echo "raise exception"
-             exit 1
-          }
-          # try
-          (
-            git config user.name "RTa-technology"
-            git config user.email "scpfoundationidcardmaker@gmail.com"
-            git add .
-            git commit -m "自動更新"
-            git pull
-            git push origin master
-          ) || {
-          # catch
-            echo "Finalization"
-            exit 1
-          }
+        git config user.name "RTa-technology"
+        git config user.email "scpfoundationidcardmaker@gmail.com"
+        git add .
+        git commit -m "自動更新"
+        git pull
+        git push origin master
     - name: Install dependencies
       run: yarn --frozen-lockfile
     - name: Build Honkit
