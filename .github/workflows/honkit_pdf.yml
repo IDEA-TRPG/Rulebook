@@ -25,8 +25,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y calibre xvfb fonts-ipafont-gothic fonts-ipafont-mincho
-        sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh
-        sudo sh /dev/stdin
+        sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
         yarn global add gitbook-cli@2.2.0
         gitbook fetch 3.2.3
     - name: generate pdf
