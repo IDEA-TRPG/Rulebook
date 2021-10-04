@@ -49,9 +49,12 @@ jobs:
     - name: Set PATH
       shell: cmd
       run: |
+        C:
         cd "C:\Program Files\Calibre2\"
         dir
         call refreshenv
+        D:
+        cd D:\a\Rulebook\Rulebook
     - name: generate pdf
       run: |
         yarn pdf
