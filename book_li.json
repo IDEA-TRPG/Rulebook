@@ -1,0 +1,9 @@
+{
+    "language": "ja",
+    "title": "IDEA-TRPG ルールブック",
+    "description": "これはIDEA-TRPGルールブックのページです。",
+    "author": "Nomikarl",
+    "plugins": [
+      "include-html"
+    ]
+}
