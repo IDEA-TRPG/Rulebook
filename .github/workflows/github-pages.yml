@@ -49,8 +49,9 @@ jobs:
     - name: Set PATH
       shell: cmd
       run: |
+        cd "C:\Program Files\Calibre2\"
+        dir
         call refreshenv
-        echo ::set-env name=PATH::%PATH%
     - name: generate pdf
       run: |
         yarn pdf
