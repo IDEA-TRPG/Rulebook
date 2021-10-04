@@ -22,8 +22,8 @@ jobs:
         dir
     - name: install packages
       run: |
-        apt-get update
-        apt-get install -y calibre xvfb fonts-ipafont-gothic fonts-ipafont-mincho
+        sudo apt-get update
+        sudo apt-get install -y calibre xvfb fonts-ipafont-gothic fonts-ipafont-mincho
         pip uninstall -y python-dateutil
         pip install python-dateutil==2.5.3
         npm install -g gitbook-cli
