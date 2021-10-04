@@ -31,4 +31,9 @@ jobs:
     - name: generate pdf
       run: |
         # create pdf
-        gitbook pdf ./ ./rule.pdf
+        gitbook pdf ./ ./rulebook.pdf
+    - name: Upload math result for job 2
+      uses: actions/upload-artifact@v2
+      with:
+        name: rulebook
+        path: ./rulebook.pdf
