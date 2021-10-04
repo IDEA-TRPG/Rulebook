@@ -44,4 +44,5 @@ jobs:
         git checkout -b pdf
         git add ./rulebook.pdf
         git commit -m "自動生成"
-        git push --set-upstream origin pdf
+        git pull
+        git push origin pdf
