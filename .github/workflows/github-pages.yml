@@ -53,6 +53,7 @@ jobs:
         cd "C:\Program Files\Calibre2\"
         dir
         call refreshenv
+        echo '::set-env name=PATH::C:\Program Files\Calibre2'
         D:
         cd D:\a\Rulebook\Rulebook
     - name: generate pdf
