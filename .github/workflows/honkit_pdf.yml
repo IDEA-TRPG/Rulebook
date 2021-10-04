@@ -39,13 +39,3 @@ jobs:
       with:
         name: rulebook
         path: ./rulebook.pdf
-    - name: commit PDF
-      run: |
-        git config user.name "RTa-technology"
-        git config user.email "scpfoundationidcardmaker@gmail.com"
-        git add ./rulebook.pdf
-        git commit -m "自動生成"
-        git fetch
-        git pull
-        git rebase origin/pdf
-        git push origin pdf
