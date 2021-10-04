@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx honkit build ./ ./docs",
-    "start": "npx honkit serve ./ ./docs"
+    "start": "npx honkit serve ./ ./docs",
+    "pdf": "npx honkit pdf ./ ./rulebook.pdf"
   },
   "repository": {
     "type": "git",

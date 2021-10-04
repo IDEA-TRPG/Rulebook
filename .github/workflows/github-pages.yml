@@ -42,3 +42,13 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: docs/
+    - name: calibre install
+      run: choco install calibre
+    - name: generate pdf
+      run: |
+        yarn pdf
+    - name: Upload math result for job 2
+      uses: actions/upload-artifact@v2
+      with:
+        name: rulebook
+        path: ./rulebook.pdf
