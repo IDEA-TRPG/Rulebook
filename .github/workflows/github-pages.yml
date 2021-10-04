@@ -47,6 +47,11 @@ jobs:
     - name: generate pdf
       run: |
         yarn pdf
+    - name: Set PATH
+      shell: cmd
+      run: |
+        call refreshenv
+        echo ::set-env name=PATH::%PATH%
     - name: Upload math result for job 2
       uses: actions/upload-artifact@v2
       with:
