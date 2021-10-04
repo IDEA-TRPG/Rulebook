@@ -29,7 +29,7 @@ jobs:
         git add .
         git commit -m "自動更新"
         git pull
-        git push
+        git push pdf
     - name: Install dependencies
       run: yarn --frozen-lockfile
     - name: Build Honkit
