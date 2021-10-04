@@ -45,5 +45,7 @@ jobs:
         git config user.email "scpfoundationidcardmaker@gmail.com"
         git add ./rulebook.pdf
         git commit -m "自動生成"
-        git pull origin pdf:pdf
+        git fetch
+        git pull
+        git rebase origin/pdf
         git push origin pdf
