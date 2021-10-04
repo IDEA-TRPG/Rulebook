@@ -25,13 +25,15 @@ jobs:
     - name: Build Honkit
       run: |
         yarn build
-    - name: generate pdf
+    - name: install packages
       run: |
         # install converter
-        sudo apt-get install calibre
+        sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
         # install Japanese font
-        sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
+        sudo yum install ipa-gothic-fonts ipa-mincho-fonts ipa-pgothic-fonts ipa-pmincho-fonts
         # install svgexporter
         npm install -g svgexport
+    - name: generate pdf
+      run: |
         # create pdf
         npx honkit pdf ./ ./rule.pdf
