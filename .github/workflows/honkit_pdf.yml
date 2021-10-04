@@ -1,4 +1,4 @@
-name: Honkit Pdf
+name: GitBook PDF
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  Honkit_Pdf:
+  GitBook_Pdf:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

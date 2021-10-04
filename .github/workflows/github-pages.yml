@@ -1,4 +1,4 @@
-name: Github Pages
+name: Honkit Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  gh-pages-deploy:
+  Honkit-pages-deploy:
     runs-on: windows-latest
     steps:
     - name: Checkout
