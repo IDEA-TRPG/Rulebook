@@ -22,6 +22,7 @@ jobs:
         dir
     - name: Commit files
       run: |
+        git checkout pdf
         git config user.name "RTa-technology"
         git config user.email "scpfoundationidcardmaker@gmail.com"
         git add .
