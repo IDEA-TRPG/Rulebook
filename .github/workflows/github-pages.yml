@@ -42,26 +42,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: docs/
-    - name: calibre install
-      run: |
-        choco install calibre
-        npm install ebook-convert
-    - name: Set PATH
-      shell: cmd
-      run: |
-        C:
-        cd "C:\Program Files\Calibre2\"
-        dir
-        call refreshenv
-        set PATH=C:\Program Files\Calibre2;%PATH:C:\Program Files\Calibre2;=%
-        ebook-convert --help
-        D:
-        cd D:\a\Rulebook\Rulebook
-    - name: generate pdf
-      run: |
-        yarn pdf
-    - name: Upload math result for job 2
-      uses: actions/upload-artifact@v2
-      with:
-        name: rulebook
-        path: ./rulebook.pdf
