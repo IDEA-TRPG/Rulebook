@@ -23,13 +23,13 @@ jobs:
     - name: Commit files
       run: |
         git fetch
-        git checkout pdf
+        git checkout -b pdf
         git config user.name "RTa-technology"
         git config user.email "scpfoundationidcardmaker@gmail.com"
         git add .
         git commit -m "自動更新"
         git pull
-        git push origin pdf
+        git push
     - name: Install dependencies
       run: yarn --frozen-lockfile
     - name: Build Honkit
