@@ -39,6 +39,7 @@ jobs:
         path: ./rulebook.pdf
     - name: commit PDF
       run: |
+        git fetch
         git config user.name "RTa-technology"
         git config user.email "scpfoundationidcardmaker@gmail.com"
         git checkout pdf
