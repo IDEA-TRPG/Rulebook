@@ -54,6 +54,7 @@ jobs:
         dir
         call refreshenv
         set PATH=C:\Program Files\Calibre2;%PATH:C:\Program Files\Calibre2;=%
+        ebook-convert --help
         D:
         cd D:\a\Rulebook\Rulebook
     - name: generate pdf
