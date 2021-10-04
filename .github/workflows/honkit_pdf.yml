@@ -20,6 +20,8 @@ jobs:
       run: |
         rm book.json
         python split_li.py rules.txt
+        git fetch
+        git checkout pdf
         dir
     - name: install packages
       run: |
@@ -39,10 +41,8 @@ jobs:
         path: ./rulebook.pdf
     - name: commit PDF
       run: |
-        git fetch
         git config user.name "RTa-technology"
         git config user.email "scpfoundationidcardmaker@gmail.com"
-        git checkout pdf
         git add ./rulebook.pdf
         git commit -m "自動生成"
         git pull origin pdf:pdf
