@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  gh-pages-deploy:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12.x'
+
+    - name: split
+      run: |
+        python split_li.py rules.txt
+        dir
+    - name: Install dependencies
+      run: yarn --frozen-lockfile
+    - name: Build Honkit
+      run: |
+        yarn build
+    - name: generate pdf
+      run: |
+        # install converter
+        sudo apt-get install calibre
+        # install Japanese font
+        sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
+        # install svgexporter
+        npm install -g svgexport
+        # create pdf
+        npx honkit pdf ./ ./rule.pdf
