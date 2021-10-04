@@ -41,8 +41,8 @@ jobs:
       run: |
         git config user.name "RTa-technology"
         git config user.email "scpfoundationidcardmaker@gmail.com"
-        git checkout -b pdf
+        git checkout pdf
         git add ./rulebook.pdf
         git commit -m "自動生成"
-        git pull
+        git pull origin pdf:pdf
         git push origin pdf
