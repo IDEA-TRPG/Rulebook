@@ -43,7 +43,9 @@ jobs:
         publish_branch: gh-pages
         publish_dir: docs/
     - name: calibre install
-      run: choco install calibre
+      run: |
+        choco install calibre
+        npm install ebook-convert
     - name: generate pdf
       run: |
         yarn pdf
