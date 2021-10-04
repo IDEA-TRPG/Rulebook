@@ -30,7 +30,7 @@ jobs:
         # install converter
         sudo apt-get install calibre
         # install Japanese font
-        sudo yum install ipa-gothic-fonts ipa-mincho-fonts ipa-pgothic-fonts ipa-pmincho-fonts
+        sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
         # install svgexporter
         npm install -g svgexport
     - name: generate pdf
