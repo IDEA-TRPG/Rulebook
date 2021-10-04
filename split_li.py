@@ -1,4 +1,5 @@
 import sys
+import os
 path = sys.argv[1]
 
 arr = []
@@ -15,3 +16,12 @@ for i in range(len(arr)):
 with open("./CHAPTER1.md", "r", encoding='utf-8') as f:
   s = f.read()
   print(s)
+
+# 変更前ファイル
+path1 = './book_li.json'
+
+# 変更後ファイル
+path2= './book.json'
+
+# ファイル名の変更
+os.rename(path1, path2)
