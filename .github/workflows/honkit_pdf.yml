@@ -20,29 +20,14 @@ jobs:
       run: |
         python split_li.py rules.txt
         dir
-    - name: Commit files
-      run: |
-        git fetch
-        git checkout -b pdf
-        git config user.name "RTa-technology"
-        git config user.email "scpfoundationidcardmaker@gmail.com"
-        git add .
-        git commit -m "自動更新"
-        git push pdf
-    - name: Install dependencies
-      run: yarn --frozen-lockfile
-    - name: Build Honkit
-      run: |
-        yarn build
     - name: install packages
       run: |
-        # install converter
-        sudo apt-get install calibre
-        # install Japanese font
-        sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
-        # install svgexporter
-        npm install -g svgexport
+        apt-get update
+        apt-get install -y calibre xvfb fonts-ipafont-gothic fonts-ipafont-mincho
+        pip uninstall -y python-dateutil
+        pip install python-dateutil==2.5.3
+        npm install -g gitbook-cli
     - name: generate pdf
       run: |
         # create pdf
-        npx honkit pdf ./ ./rule.pdf
+        gitbook pdf ./ ./rule.pdf
