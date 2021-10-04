@@ -28,7 +28,7 @@ jobs:
     - name: install packages
       run: |
         # install converter
-        sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+        sudo apt-get install calibre
         # install Japanese font
         sudo yum install ipa-gothic-fonts ipa-mincho-fonts ipa-pgothic-fonts ipa-pmincho-fonts
         # install svgexporter
