@@ -4,7 +4,7 @@
     "description": "これはIDEA-TRPGルールブックのページです。",
     "author": "Nomikarl",
     "plugins": [
-      "include-html"
+      "honkit-plugin-google-analytics"
     ],
     "pluginsConfig": {
         "analytics": {
